@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fifteen Puzzle</title>
+
+		<link href="fifteen.gif"
+		      type="image/gif" rel="shortcut icon" />
+
+		<link href="15puzzle.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="./js/ajax-promise.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script src="./js/15puzzle.js" type="text/javascript"></script>
+		<script src="./js/records.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h3 id="user-signed-in">You are logged in as : 
+				<span id="username"></span>
+			&nbsp;&nbsp;
+			<a href="../../login_system/login.html">not you?</a>
+		</h3>
+		<h3 id="user-not-signed-in" style="border: 2px red solid;">You are not logged in yet, 
+			<a href="../../login_system/login.html">sign in</a> 
+			to place your name on records! 
+		</h3>
+		
+		<h1>Fifteen Puzzle</h1>
+
+
+		
+		<div id="puzzlearea">
+		</div>
+		
+		<div id="controls">
+			<fieldset>
+				<legend>Moves:</legend>
+				<div id="moves"></div>
+			</fieldset>
+			<fieldset>
+				<legend>Time:</legend>
+				<div id="time"></div>
+			</fieldset>
+			<!--
+			<fieldset>
+				<legend>Serial Numbers:</legend>
+				<input type="checkbox" id="displaySerial" checked="checked" /><lable for="displaySerial">display</lable>
+			</fieldset>
+			-->
+			<fieldset>
+                <legend>Image:</legend>
+                <select id="image">
+					<option value="img002.jpg" selected = "selected">summer rain</option>
+					<option value="img004.jpg">oil painting</option>
+                    <option value="img005.jpg">UW seal</option>
+					<option value="img007.jpg">Haibara Ai</option>
+                    <!--
+                    <option value="img004.jpg">400 wpm</option>
+                    <option value="img005.jpg">450 wpm</option>
+                    <option value="img006.jpg">500 wpm</option>
+                    -->
+                </select>
+            </fieldset>
+		</div>
+		
+		<br />
+		<div id="startInfo">
+			
+		</div>
+		
+		<p id="button">
+			<button id="shuffleButton">Shuffle</button>
+			<button id="giveUpButton" class="hidden">Give Up</button>
+		</p>
+		
+		<br />
+		<button id="recordsButton">Show Records</button>
+		<button id="recordsButton2" class="hidden">Hide Records</button>
+		<div id="recordsWrap" class="hidden">
+			<div id="records" style="display: flex; flex-direction: row;
+	justify-content: center;">
+				<div class="records-div">
+					<fieldset id="leastMoves">
+						<legend>Least Moves Used:</legend>
+						<img id="loading1" class="loadingImg" src="img/loading.gif" alt="loading" />
+						<ol id="leastMovesList">
+
+						</ol>
+					</fieldset>
+				</div>
+				<div class="records-div">
+					<fieldset id="leastTime">
+						<legend>Least Time Used:</legend>
+						<img id="loading2" class="loadingImg" src="img/loading.gif" alt="loading" />
+						<ol id="leastTimeList">
+
+						</ol>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div id="output"></div>
+		<br />
+		
+		<p class="info">
+			&copy; Hongxiao Lyu --- 2019 --- All rights reserved.
+		</p>
+		
+	</body>
+</html>

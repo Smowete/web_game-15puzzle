@@ -1,0 +1,132 @@
+
+body {
+    font-family: cursive;
+    font-size: 14pt;
+    text-align: center;
+}
+
+button {
+    font: inherit;
+}
+
+#puzzlearea {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tile {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 5px black solid;
+    font-size: 40pt;
+    cursor: default;
+}
+
+.tile:hover {
+    color: white;
+}
+
+.moveable:hover {
+    color: red;
+    border: 5px red solid;
+    cursor: pointer;
+}
+
+#startInfo {
+    color: red;
+    font-size: 20pt;
+}
+
+.records-div {
+	width: 40%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*
+ol {
+	text-align: left;
+}
+*/
+#records {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.loadingImg {
+	width: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+
+/*
+
+for solution 2
+
+
+body {
+    font-family: cursive;
+    font-size: 14pt;
+    text-align: center;
+}
+
+button {
+    font-family: inherit;
+}
+
+#puzzlearea {
+    
+    width: 400px;
+    height: 398px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+
+.tile {
+    background-image: url("img001.jpg");
+    width: 90px;
+    height: 90px;
+    border: 5px black solid;
+    font-size: 40pt;
+}
+
+.blankTile {
+    width: 90px;
+    height: 90px;
+    border: 5px white solid;
+}
+
+.tile:hover {
+    color: white;
+}
+
+.moveable:hover {
+    color: red;
+    border: 5px red solid;
+    cursor: pointer;
+}
+
+*/
